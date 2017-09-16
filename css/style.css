@@ -1,0 +1,9 @@
+body{
+background-image: url('../img/wood.jpg');
+//background-size: cover;
+ color:white
+}
+.fa-arrow-circle-o-left{
+
+	color: white;font-size: 30px;border:3px solid #ae6137;border-radius: 60px;
+}

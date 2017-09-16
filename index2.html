@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>MyApp</title>
+        <!-- Path to Framework7 Library CSS-->
+        <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+   <!-- Path to your custom app styles-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/welcomescreen.css">
+		  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+		 <script type="text/javascript" src="js/welcomescreen.js"></script>
+        <script type="text/javascript" src="js/myapp/pages/IndexPageController.js"></script>
+        <script type="text/javascript" src="js/myapp/init.js"></script>
+		  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	 <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/ jquery.mobile-1.4.5.min.js"></script>
+
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+     
+	  
+    <style type="text/css">
+body{
+background-image: url('img/wood.jpg');
+//background-size: cover;
+ //color:white
+}
+.cat{
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+ .fa-arrow-circle-o-left, .fa-arrow-circle-o-right{
+
+  color: white;font-size: 30px;border:3px solid #ae6137;border-radius: 60px;
+} 
+@media(max-width: 320px){
+ #ad{font-size:12px;
+
+}
+} 
+@media(max-width: 240px){
+ #ad{font-size:7px;
+  padding-left: 0;
+}
+} 
+@media(max-width: 425px){
+  .hidden-1{
+    visibility: hidden;
+  
+    height: 0px;
+   
+  }
+#uchat{
+  font-size: 13px;
+}
+}
+@media(min-width: 426px){
+  .hidden-2{
+    visibility: hidden;
+  
+    height: 0px;
+   
+  }
+   
+}
+@media(max-width: 425px){
+#checked{
+  width: 100%;
+
+}
+#checked1{
+  width: 100%;
+margin: 0;
+padding: 0;
+text-align: center
+
+}
+}
+h6, h5{
+margin-top: 0px;
+padding-top: 0px;
+border:3px solid #a1692e;
+border-top:none;
+border-radius: 4px;
+color:white;
+text-transform: uppercase;
+text-align: center;
+  }
+  .navbar{
+    background: #a1692e
+  }
+  .img-thumbnail{
+    border: 3px solid #a1692e;
+  }
+</style> 
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <!-- Status bar overlay for fullscreen mode-->
+        <div class="statusbar-overlay"></div>
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+        <!-- /Header -->
+        <!-- Views-->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class-->
+            <div class="view view-main">
+                <!-- Top Navbar-->
+                <div class="navbar">
+                    <!-- Navbar page 1 -->
+                    <div class="navbar-inner">
+                        <div class="center sliding">Framework7 Welcome Screen</div>
+                    </div>
+                </div>
+                <!-- Pages, because we need fixed-through navbar and toolbar, it has additional
+                appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- - [Page 1] ---------------------------------------- -->
+                    <div data-page="index" class="page" ng-controller="IndexPageController">
+                        <!-- Page content-->
+                        <div class="page-content">
+                            <div class="content-block">
+                                <p>This plugin will display a fullscreen swipeable modal window to guide the user through a welcome screen</p>
+                                <p><a href="#" class="tutorial-open-btn button">Open Welcome Screen</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    
+    </body>
+
+</html>

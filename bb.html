@@ -1,0 +1,18 @@
+  <script type="text/javascript" src="js/jquery.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+ <button id="fat-btn" class="btn btn-danger form-control" data-loading-text="Uploading..."  
+   type="button"> Upload 
+</button> 
+<button  class="btn btn-danger form-control"   
+   type="button"> Upload 1
+</button> 
+<script> 
+   $(function() {  
+      $("#fat-btn").click(function(){ 
+         $(this).button('loading').delay(1000).queue(function() { 
+           $(this).button('reset'); 
+         });         
+      }); 
+   });   
+</script> 
