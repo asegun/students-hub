@@ -1,0 +1,12 @@
+#================== Remove.php extension =====================
+Options +MultiViews
+
+RewriteEngine On 
+
+RewriteEngine On 
+
+RewriteEngine On
+RewriteRule ^services/([a-zA-Z0-9-/]+)$ services.php?seo=$1
+RewriteRule ^services/([a-zA-Z0-9-/]+)/$ services.php?seo=$1
+
+

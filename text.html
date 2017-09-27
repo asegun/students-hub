@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>External and internal panels</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	 <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	   <link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	  <script src="_assets/js/index.js"></script>
+    <style type="text/css">
+.ui-content{
+background-image: url('img/wood.jpg');
+background-size: cover;
+ //color:white
+}
+.cat{
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+  .fa-arrow-circle-o-left{
+
+	color: white;font-size: 30px;border:3px solid #ae6137;border-radius: 60px;
+}  
+
+.ui-content{
+background-image: url('img/wood.jpg');
+//background-size: cover;
+ //color:white;
+ height:1200px;
+ padding-top:30%;
+}
+.cat{
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+ .fa-arrow-circle-o-left, .fa-arrow-circle-o-right{
+
+  color: white;font-size: 30px;border:3px solid #ae6137;border-radius: 60px;
+} 
+@media(max-width: 320px){
+ #ad{font-size:12px;
+
+}
+} 
+@media(max-width: 240px){
+ #ad{font-size:7px;
+  padding-left: 0;
+}
+} 
+@media(max-width: 425px){
+  .hidden-1{
+    visibility: hidden;
+  
+    height: 0px;
+   
+  }
+#uchat{
+  font-size: 13px;
+}
+}
+@media(min-width: 426px){
+  .hidden-2{
+    visibility: hidden;
+  
+    height: 0px;
+   
+  }
+   
+}
+@media(max-width: 425px){
+#checked{
+  width: 100%;
+
+}
+#checked1{
+  width: 100%;
+margin: 0;
+padding: 0;
+text-align: center
+
+}
+}
+h6, h5{
+margin-top: 0px;
+padding-top: 0px;
+border:3px solid #a1692e;
+border-top:none;
+border-radius: 4px;
+color:white;
+text-transform: uppercase;
+text-align: center;
+  }
+  .navbar{
+    background: #a1692e
+  }
+  .img-thumbnail{
+    border: 3px solid #a1692e;
+  }
+  </style>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body>
+
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+	
+	</div><!-- /header -->
+
+	<div data-role="page" id="a" class="cont">
+
+		<div role="main" class="ui-content" id="ui-content">
+
+		<h3 style="text-align:center;color:white;">Welcome! what do you want to do?</h3>
+ 
+          
+								<div class="col-xs-12" >
+
+									<div class="col-xs-12 col-sm-6 col-sm-offset-3" >
+										<div class="col-xs-12 " style="border:2px solid white;margin-bottom:10px; padding-bottom:5px;">
+											<br/>
+											<a href="#forsale">
+												<div class="col-xs-12">
+													<img src="img/1.jpg" class="img-responsive">
+												</div>
+												<div class="col-xs-12">
+													<hr/>
+												<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left " style="background:#664532;color:white; text-shadow:none;" id="ad">What's for sale</button>
+												</div>
+												<br/>
+											</a>	
+										</div>
+										<br/>
+									</div>
+									<div class="col-sm-6 col-sm-offset-3" >
+										<div class="col-xs-12 " style="border:2px solid white ;margin-bottom:10px; padding-bottom:5px;">
+											<br/>
+											<a  href="#sell">
+												<div class="col-xs-12">
+													<img src="img/2.jpg" class="img-responsive">
+												</div>
+												<div class="col-xs-12">
+													<hr/>
+													<button class="col-xs-12 btn btn-primary btn-lg" style="background:#a1692e" id="ad"> Sell</button>
+												</div>
+												<br/>
+											</a>
+										</div>
+										<br/>
+									</div>
+
+
+
+									<div class="col-sm-6 col-sm-offset-3">
+										<div class="col-xs-12 " style="border:2px solid white ;margin-bottom:10px; padding-bottom:5px;">
+											<br/>
+											<a  href="add">
+												<div class="col-xs-12" style="padding: 0;">
+													<img src="img/2.jpg" class="img-responsive">
+												</div>
+												<div class="col-xs-12" style="padding: 0;" >
+													<hr/>
+													<button class="col-xs-12 btn btn-primary btn-lg" id="ad" style="background:##54575e;  "> Advertise your business</button>
+												</div>
+												<br/>
+											</a>
+										</div>
+									</div>
+								
+								</div>
+							
+                     
+			
+		</div><!-- /content -->
+
+		
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+	</div><!-- /page -->
+
+	
+	<div data-role="page" id="sell" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#a" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content" style="text-shadow:none;color:white">
+
+		
+                   <div class="col-xs-12"> 
+    <center>Please login or register if you are new</center>
+
+  <ul id="myTab" class="nav nav-tabs"> 
+   <li ><a href="#login" data-toggle="tab"> 
+      <button class="btn btn-danger "> <i class="fa fa-user-circle-o"></i> Login</button></a> 
+   </li> 
+   
+   <li class="pull-right"><a href="#register" data-toggle="tab"><button class="btn btn-warning"><i class="fa fa-sign-in"> </i> Register</button></a></li> 
+   
+</ul> 
+<div>
+<h3 style="text-align:center;color:white;">Please Read the Instruction Carefully Before You Proceed</h3>
+ 
+<p>1. hgvdsj adhadfahdfde adhkdda</p>
+<p>1. hgvdsj adhadfahdfde adhkdda</p>
+<p>1. hgvdsj adhadfahdfde adhkdda</p>
+</div>
+
+  </div> 
+  
+			
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+	</div><!-- /page -->
+
+
+	<div data-role="page" id="forsale" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#a" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+		<h3 style="text-align:center;color:white;">SELECT A CATRGORY</h3>
+ 
+                       <div class="col-xs-12"> 
+                        
+                     
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#subcat">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                        
+
+
+                          </div>
+                      
+			
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+		
+
+	</div><!-- /page -->
+
+
+	<div data-role="page" id="subcat" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#forsale" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+		<h3 style="text-align:center;color:white;">AVAILABLE PRODUCTS</h3>
+
+                          
+                          <div class="col-xs-12">
+                     
+                            <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#contact">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            
+                        <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#contact">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                             <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#contact">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                             <div class="col-xs-6 col-sm-4 col-md-3" >
+                            <a href="#contact">
+                             <div class="thumbnail"> 
+                              <img src="images/1.jpg" class="img-responsive img-thumbnail cat"  />
+                            </div>
+                            <div class="caption">
+                              <h5 >Phones and me</h5>
+                              </div>
+                              </a>
+                            </div>
+                            
+                            
+                          </div>
+
+                       
+                      
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+		
+	
+
+	</div><!-- /page -->
+
+
+	<div data-role="page" id="contact" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#subcat" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+		    <div class="panel-body"> 
+                           <center><h2 style="border:2px solid grey">PRODUCTS DETAILS</h2></center>
+                          <div class="col-xs-12">
+                     
+                       <div class="col-xs-12 col-sm-12 " >
+                           <div class="col-xs-12 col-sm-6 " >
+                             <div class="thumbnail" style="background: transparent;padding: 0px"> 
+                              <img src="images/1.jpg" class="img-responsive " style="width: :100%"  />
+                            </div>
+                            <div class="caption"> 
+                            <h3 style="text-align: center;text-transform: capitalize; color: white"><b>Samsung tab (Black)</b></h3>
+                            </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                            
+                              <h4>Price:N23,000</h4>
+                              <h4>Description: farily used</h4>
+                              <p>Sellers Details</p>
+                              <p>Name: Adele matthew</p>
+                              <p>Phone: 090162532456</p>
+                              </div>
+                              <div class="col-xs-12">
+                              <div class="col-sm-6">
+                              <button class="ui-btn ui-shadow ui-corner-all  " id="uchat"><i class="fa fa-comment-o"></i> Chat with seller</button>
+                              </div>
+                              <div class="col-sm-6">
+                              <a href="subcat">     <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"> Back</button></a>
+                              </div>
+                              </div>
+                             
+                            </div>
+
+
+                          
+                            
+                            
+                          </div>
+
+
+                          </div>
+                       
+			
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+	</div><!-- /page -->
+
+<div data-role="page" id="sell1" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#a" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+	next
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+	
+	<div data-role="page" id="register" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#sell" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content " style="min-height:1000px;" >
+
+		<h3 style="text-align:center;color:white;">Registration Form</h3>
+ 
+                   <div class="col-xs-12" > 
+
+
+           <div class="col-sm-8 col-sm-offset-2">
+    
+   <form action='#' id="myForm" method='post' name="myForm">
+   <div data-demo-html="true" class="input-group input-group-lg has-success">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-user"></i></span> 
+		<input type="text" name="name" id="fname" class="input-lg" placeholder="Enter  Name" value="">
+	</div><!--/demo-html -->
+	
+     <div data-demo-html="true" class="input-group input-group-lg has-success">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-envelope"></i></span> 
+		<input type="email" name="email" id="mail" class="input-lg" placeholder="Enter  Email" value="">
+	</div><!--/demo-html -->
+    
+    <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-phone"></i></span> 
+		<input type="number" name="phone" id="pnumber" class="input-lg" placeholder="Enter  Phone Number" value="">
+	</div><!--/demo-html -->
+	
+      <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-user"></i></span> 
+		<input type="text" name="username" id="uname" class="input-lg" placeholder="Enter  Username" value="">
+	</div><!--/demo-html -->
+	
+   <div data-demo-html="true" class="input-group input-group-lg has-error">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-key"></i></span> 
+		<input type="password" name="password" id="conpass" class="input-lg" placeholder="Enter  Password" value="">
+	</div><!--/demo-html -->
+ 
+	<div data-demo-html="true" class="input-group input-group-lg has-error">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-key"></i></span> 
+		<input type="password" name="conpassword" id="conpass" class="input-lg" placeholder="Confirm Password" value="">
+	</div><!--/demo-html -->
+
+			
+          <div data-demo-html="true">
+            <fieldset data-role="controlgroup">
+             
+                <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked>
+                <label for="checkbox-1a">I Agree</label>
+
+              
+            </fieldset>
+        </div><!-- /demo-html -->
+        
+		   <div data-demo-html="true" >
+	<div class="col-xs-12">
+             
+			 
+			  <div class="col-xs-offset-1 col-xs-5">
+                <button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submit-2" style="background:#664532">Register</button>
+				</div>
+				 <div class="col-xs-1">
+				OR
+				</div>
+				 <div class="col-xs-4">
+			<a href="#login"><button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submit-2" style="background:#664532">Login</button></a>
+			</div>
+			</div>
+            </div><!--/demo-html -->
+ </form>
+ </div> 
+
+   </div> 
+  
+
+
+
+
+  
+			
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+
+<div data-role="page" id="login" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#sell" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		
+		<div role="main" class="ui-content">
+
+		<h3 style="text-align:center;color:white;">Login</h3>
+ 
+                   <div class="col-xs-12"> 
+   
+
+ 
+   <div class="" >
+         <div class="col-sm-8 col-sm-offset-2">
+    
+   <form action='#' id="myForm" method='post' name="myForm">
+   
+     <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-user"></i></span> 
+		<input type="text" name="username" id="uname" class="input-lg" placeholder="Enter  Username" value="">
+	</div><!--/demo-html -->
+	
+   <div data-demo-html="true" class="input-group input-group-lg has-error">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-key"></i></span> 
+		<input type="password" name="password" id="conpass" class="input-lg" placeholder="Enter  Password" value="">
+	</div><!--/demo-html -->
+
+   <div class="form-group"> 
+      <div class="col-sm-offset-2 col-sm-10"> 
+       <a href="#my-items">  <button type="submit" class="btn btn-default">Sign in</button></a> 
+      </div> 
+   </div> 
+</form>
+</div> 
+
+   </div>
+   
+  
+
+  </div> 
+
+
+  
+			
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+
+	<div data-role="page" id="my-items" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#sell" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+	
+                              <div class="" style="margin-top: 50%">
+<a href="#old-items"><button class="btn btn-primary form-control input-lg">Check your item(s) in the market</button></a>
+<br/>
+<br/>
+<br/>
+<a href="#new-item"><button class="btn btn-primary form-control input-lg">Sell a new item</button></a>
+  </div> 
+			
+		</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+	
+	
+	<div data-role="page" id="old-items" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#sell" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+	   <div class="row">
+          <div class="col-xs-4">
+            <img src="img/1.jpg" class="img-responsive img-thumbnail"/>
+           
+           <p style="text-transform: capitalize;">iphone 6</p>
+              
+             <p>Details | Sold</p>
+
+          </div>
+          <div class="col-xs-4">
+            <img src="img/2.jpg" class="img-responsive img-thumbnail"/>
+           
+           <p style="text-transform: capitalize;">tehcno canon c8</p>
+              
+             <p>Details | Sold</p>
+
+          </div>
+          <div class="col-xs-4">
+            <img src="img/3.jpg" class="img-responsive img-thumbnail"/>
+           
+          <p style="text-transform: capitalize;">tehcno hotenote</p>
+               
+             <p>Details | Sold</p>
+
+          </div>
+
+          <div class="col-xs-4">
+            <img src="img/4.jpg" class="img-responsive img-thumbnail"/>
+           
+           <p style="text-transform: capitalize;">geonee</p>
+             
+             <p>Details | Sold</p>
+
+          </div>
+          <div class="col-xs-4">
+            <img src="img/5.jpg" class="img-responsive img-thumbnail"/>
+           
+            <p style="text-transform: capitalize;">ipad</p>
+            
+             <p><a href="#itemdetails"> Details</a> | <a href="#" data-toggle="modal"  
+   data-target="#myModal">Sold</a></p>
+
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4"></div>
+  </div>
+ 		
+		</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+	<div data-role="page" id="new-item" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#sell" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+	
+                              <p>
+    <div class="col-xs-12" style="text-align: center;color:white; text-shadow:none;"><h3>Fill Form To Upload Item To The market</h3></div>
+   <form action='#' id="myForm" method='post' name="myForm">
+    <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-shopping-cart"></i></span> 
+		<input type="text" name="username" id="uname" class="input-lg" placeholder="Item Name" value="">
+	</div><!--/demo-html -->
+	
+    <br/>
+   <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa fa-sort-alpha-asc"></i></span> 
+		
+        <select class="form-control">
+          <option>Select a category</option>
+           <option>Phone</option>
+        </select>
+	</div>
+   
+    <br/>
+
+    
+   <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa  fa-credit-card"></i></span> 
+		<input type="number" name="price"  class="input-lg" placeholder="Item price" value="">
+	</div>
+    <br/> 
+
+
+<div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa   fa-file-o"></i></span> 
+ <textarea class="form-control" style="height: 150px;resize :none" placeholder="Enter a short description of the item"></textarea> 
+    </div> 
+    
+    <br/>
+   
+   
+   <div data-demo-html="true" class="input-group input-group-lg has-warning">
+		<span class="input-group-addon" style="background:transparent;border:none;"><i class="fa  fa-image"></i></span> 
+		<input type="file" name="itemimage"  class="input-lg" placeholder="Item price" >
+	</div>
+    </div> 
+    <br/>
+  <button id="fat-btn" class="btn btn-danger form-control" data-loading-text="Loading..."  
+   type="button"> Upload 
+</button> 
+<script> 
+   $(function() {  
+      $("#fat-btn").click(function(){ 
+         $(this).button('loading').delay(1000).queue(function() { 
+           // $(this).button('reset'); 
+         });         
+      }); 
+   });   
+</script> 
+    <div id='username'></div>
+    <br/> 
+        
+ </form></p> 
+
+
+			
+		</div><!-- /content -->
+	
+	
+	<div data-role="page" id="itemdetails" class="cont">
+	<div data-role="header" data-position="fixed" data-theme="a" style="background: #a1692e;text-shadow:none; color:white; text-transform:uppercase;">
+		<h1>students' hub</h1>
+		<a href="#outside" data-icon="bars" class="ui-alt-icon" data-iconpos="notext">Menu</a>
+		<div data-role="navbar">
+			<ul>
+				<li> <a  href="#a" ><i class="fa fa-arrow-left"></i> Back</a> 
+      </li>
+				<li><a href="#a"><i class="fa fa-home"></i> Home</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- /header -->
+
+
+		<div role="main" class="ui-content">
+
+<div class="row">
+          <div class="col-xs-6 " style="text-transform: capitalize;">
+            <img src="img/1.jpg" class="img-responsive img-thumbnail"/>
+           
+            <p>Item: tehcno canon c8</p>
+             <p>Category: Phones and Gadgets</p>
+             <p>Price: N40,000</p>
+             <p>date added: 22/07/2017</p>
+             <p>Edit | Sold | <a href="myitems.html" >Back</a></p>
+
+          </div>
+          
+  </div>
+		</div><!-- /content -->
+
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+	
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#a" class="ui-btn-active ui-state-persist" style="background: #a1692e;">&copy; 2017 Students Hub</a></li>
+				
+				</ul>
+			</div>
+		</div><!-- /header -->
+
+		
+		
+
+	
+	</div>
+
+	
+	<div data-role="panel" id="outside" data-theme="b">
+		<ul data-role="listview">
+			<li data-icon="back"><a href="#" data-rel="close">Close</a></li>
+			<li><a href="#forsale">Buy</a></li>
+			<li><a href="#sell">Sell an item</a></li>
+			<li><a href="#add">Advertise your product</a></li>
+		</ul>
+	</div>
+	</body>
+</html>
